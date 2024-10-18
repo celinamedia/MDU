@@ -1,0 +1,471 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6E6AC;
+    height: 2000px;
+}
+
+.sidebar {
+    width: 100%;
+    height: 60px; 
+    background-color: #D0A187;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: flex;
+    align-items: center; 
+    z-index: 10;
+}
+
+.logo {
+    width: 200px; 
+    height: auto; 
+    padding-top: 48%;
+    display: block; 
+    padding-left: 100px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 200px;
+    display: flex;
+    justify-content: right; 
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin-right: 80px;
+    position: relative; 
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    color: #FE3636;
+    border-radius: 5px;
+}
+
+
+
+.kurv {
+    position: absolute;
+    top: 350px;
+    right: 150px;
+    width: 600px; 
+    height: auto;
+    z-index: auto;
+}
+
+.content {
+    margin-top: 80px;
+    padding: 20px;
+    min-height: 1200px; 
+}
+
+.welcome-text {
+    background-color: #FFF5E9; 
+    padding-top: 50px;
+    padding-left: 40px; 
+    text-align: left;
+    color: #FE6461;
+    max-width: 1500px;
+    margin: 250px auto; /* Juster margin-top og centrer med auto */
+    font-family: abhaya-libre-extrabold;
+    min-height: 500px;
+    font-size: 85px;
+    padding-right: 750px;
+}
+
+.welcome-text p {
+    font-family: abhaya-libre-medium;
+    font-weight: 500;
+    color: #FE6461; 
+    font-size: 36px;   
+}
+
+.spisesteder {
+    position: relative;
+    background-color: #FFF5E9; 
+    padding-top: 50px;
+    padding-right: 40px;
+    text-align: right;
+    color: #83956D;
+    max-width: 1500px;
+    top: -200px;
+    font-family: abhaya-libre-extrabold;
+    min-height: 500px;
+    font-size: 75px;
+    padding-left: 750px;
+}
+
+.spisesteder p {
+    text-align: right;
+    font-family: abhaya-libre-medium;
+    font-weight: 500;
+    color: #83956D; 
+    font-size: 36px; 
+}
+
+.pho {
+    position: absolute;
+    top: 900px;
+    right: 1100px;
+    width: 450px; 
+    height: auto;
+    z-index: auto;
+}
+
+.læs-her-knap{
+position: absolute;
+width: 156px;
+height: 49px;
+left: 1100px;
+top: 1400px;
+
+background: rgba(254, 54, 54, 0.76);
+box-shadow: 4px 5px 0px rgba(0, 0, 0, 0.25);
+border-radius: 200px;
+
+   /* Styling af tekst */
+   color: #FFF5E9;           
+   font-size: 18px;        /* Tekststørrelse */
+   font-family: 'abhaya-libre-extrabold'; 
+   font-weight: bold;      
+   text-align: center;     /* Centrerer teksten */
+   line-height: 49px;      /* Vertikal centrering af tekst */
+   cursor: pointer;        /* Ændrer cursor til en hånd */
+}
+
+
+.skål {
+    width: 100%;
+    height: auto;
+    position: relative; 
+    top: 280px;
+    left: px;
+}
+
+.spisesteder-text {
+    background-color: #FCFAE1; 
+    position: relative;
+    left: 20px;
+    padding-top: 50px;
+    padding: 10%; 
+    text-align: center;
+    color: #6885B1;
+    max-width: 1250px;
+    margin: 10 auto; /* Juster margin-top og centrer med auto */
+    font-family: abhaya-libre-extrabold;
+    min-height: 100px;
+    font-size: 35px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-betw;
+    gap: 0px; /* Fjern eventuel mellemrum mellem kolonnerne */
+    margin-top: -40px;
+    height: 600px;
+   
+}
+
+.column {
+    flex: 0 0 496px; /* Fast bredde på 30% for hver kolonne */
+    padding: 10px;
+    background-color: #FCFAE1; 
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;  /* Margin mellem kolonner */
+    margin-right: 10px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+}
+
+
+.column p {
+    font-size: 14px;
+}
+
+.column img {
+    width: 100%; /* Fyld kolonnens bredde */
+    height: auto; /* Behold billedets oprindelige proportioner */
+    max-width: 200px; /* Angiver maksimal bredde for billedet */
+    max-height: 150px; /* Angiver maksimal højde */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.grøntsags-text {
+    background-color: #FFF5E9; 
+    padding-top: 200px;
+    text-align: right;
+    color: #83956D;
+    max-width: 1500px;
+    margin: 250px auto; /* Juster margin-top og centrer med auto */
+    font-family: abhaya-libre-extrabold;
+    min-height: 500px;
+    font-size: 85px;
+    padding-left: 700px;
+    padding-right: 100px;
+}
+
+.grøntsagstekst-text p {
+    font-family: abhaya-libre-medium;
+    font-weight: 500;
+    color: #83956D; 
+    font-size: 6px;   
+}
+
+.grønt {
+    position: absolute;
+    top: 430px;
+    left: 150px;
+    width: 400px; 
+    height: auto;
+    z-index: auto;
+}
+
+.grønt-text {
+    background-color: #FFF5E9; 
+    padding-top: 100px;
+    text-align: left;
+    color: #83956D;
+    max-width: 1500px;
+    margin: -200px auto; /* Juster margin-top og centrer med auto */
+    font-family: abhaya-libre-extrabold;
+    min-height: 500px;
+    font-size:50px;
+    padding-left: 100px;
+    padding-right: 700px;
+}
+
+.grønt-text p {
+    font-family: abhaya-libre-medium;
+    font-weight: 500;
+    color: #83956D; 
+    font-size: 30px;   
+}
+
+.køleskab{
+    position: absolute;
+    top: 1300px;
+    right: 150px;
+    width: 400px; 
+    height: auto;
+    z-index: auto;
+}
+
+.krydderier-text {
+        background-color: #FFF5E9; 
+        padding-top: 100px;
+        text-align: left;
+        color: #83956D;
+        max-width: 1500px;
+        margin: -200px auto; /* Juster margin-top og centrer med auto */
+        font-family: abhaya-libre-extrabold;
+        min-height: 500px;
+        font-size:50px;
+        padding-left: 600px;
+        padding-right: 100px;
+    }
+    
+    .krydderier-text p {
+        font-family: abhaya-libre-medium;
+        font-weight: 500;
+        color: #83956D; 
+        font-size: 30px;   
+        padding-bottom: 100px;
+    }
+
+    .krydderier-text ul li {
+        font-family: abhaya-libre-medium;
+        font-weight: 500;
+        color: #83956D; 
+        font-size: 30px;   
+    }
+
+    .krydderier {
+        position: absolute;
+        top: 2100px;
+        left: 150px;
+        width: 400px; 
+        height: auto;
+        z-index: auto;  
+    }
+
+
+    .hack-text {
+        background-color: #FFF5E9; 
+        padding-top: 200px;
+        text-align: center;
+        color: #83956D;
+        max-width: 1500px;
+        margin: -200px auto; /* Juster margin-top og centrer med auto */
+        font-family: abhaya-libre-extrabold;
+        min-height: 500px;
+        font-size:50px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    
+    .hack-text p {
+        font-family: abhaya-libre-medium;
+        font-weight: 500;
+        color: #83956D; 
+        font-size: 30px;   
+    }
+
+    .anbefaling-sektion-grøntsagsguide {
+        display: flex;
+        margin-top: 300px; 
+        margin-bottom: 0px;
+    }
+    /* Til Wok */
+.green-box h3 {
+    font-family: 'Abhaya Libre', serif; 
+    color: #FCFAE1; 
+    font-size: 24px; 
+}
+
+/* Til Vietnamesiske forårsruller */
+.green-box h4 {
+    font-family: 'Abhaya Libre', serif;
+    color: #FCFAE1; 
+    font-size: 22px;
+}
+
+/* Til SU Ramen */
+.green-box h5 {
+    font-family: 'Abhaya Libre', serif; 
+    color: #FCFAE1; 
+    font-size: 20px; 
+}
+
+
+    .anbefaling-sektion {
+        display: flex;
+        margin-top: 0px; 
+        margin-bottom: 0px;
+    }
+    
+    .anbefaling {
+        position: relative; 
+        text-decoration: none; 
+        text-align: center;  
+        height: 500px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        margin: 30px; 
+        box-sizing: border-box;
+        background-color: #83956D; 
+    }
+    
+    .anbefaling-billede {
+        width:70%; 
+        height: auto; 
+        transition: transform 0.3s; 
+    }
+    
+    .anbefaling:hover .anbefaling-billede {
+        transform: scale(1.05);
+        z-index: 1;
+    }
+    
+    .anbefaling p {
+        color: #FFF5E9; 
+        font-family: 'abhaya-libre-medium';
+        font-weight: 800;
+        margin-top: 20px; 
+        flex-shrink: 0; 
+        font-size: 20px;
+    } 
+.footer { 
+    width: 100%;
+    height: 360px;
+    background-color: #ff6347;
+    color: #FFF5E9;
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Abhaya Libre ExtraBold';
+}
+
+
+
+.footer p {
+    margin: 5px;
+}
+
+.tilmeld-knap {
+    width: 156px;
+    height: 49px;
+    left: 684px;
+    top: 2715px;
+    background: #F6E6AC;
+    box-shadow: 4px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 200px;
+    z-index: 0;
+}
+
+.Tilmeld {
+    position: relative;
+    width: 102px;
+    height: 24px;
+    left: 27px;
+    top: 12px;
+
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px; /* Identisk med boksens højde */
+    text-align: center;
+    color: #F6E6AC;
+   
+    font-family: 'Abhaya Libre ExtraBold', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;  /* Justerer højde for vertikal centrering */
+        color: #000000;     /* Tekstfarve */
+        text-align: center;
+        cursor: pointer;    /* Ændrer cursor til hånd */
+    }
+    
+
+
+.input-felt {
+    width: 100%; 
+    max-width: 600px; 
+    padding: 20px 20px; 
+    margin: 8px 0; /* Afstand til andre elementer */
+    box-sizing: border-box; /* Sørg for, at padding og bredde opfører sig som forventet */
+    border: 2px solid #D0A187; /* Giv feltet en let grå kant */
+    border-radius: 0px; /* Runde hjørner */
+    font-size: 20px; /* Juster tekststørrelsen */
+    color: #D0A187; /* Sort tekstfarve */
+    background-color: #FFF5E9;
+    font-family: 'Abhaya Libre ExtraBold';
+}
+
+.input-felt:focus {
+    border-color: #83956D; 
+    outline: none;
+}
+
